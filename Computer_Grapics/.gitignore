@@ -1,0 +1,30 @@
+# Unity
+[Ll]ibrary/
+[Tt]emp/
+[Oo]bj/
+[Bb]uild*/
+[Ll]ogs/
+[Mm]emoryCaptures/
+UserSettings/
+Artifacts/
+sysinfo.txt
+
+# OS / IDE
+.DS_Store
+.vscode/
+.idea/
+*.sln
+*.csproj
+*.unityproj
+*.pidb
+*.user
+*.userprefs
+*.opendb
+*.VC.db
+
+# Unity packages / archives
+*.unitypackage
+*.zip
+
+# Collaborate
+Packages/com.unity.collab-proxy/
