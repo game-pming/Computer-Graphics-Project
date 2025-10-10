@@ -4,7 +4,12 @@
 TagManager:
   serializedVersion: 2
   tags:
+  - PlayerDead
   - Floor
+  - Wall
+  - Monster
+  - MonsterDead
+  - Cake
   layers:
   - Default
   - TransparentFX
@@ -12,13 +17,13 @@ TagManager:
   - 
   - Water
   - UI
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
+  - Player
+  - PlayerDead
+  - Monster
+  - MonsterDead
+  - Floor
+  - Wall
+  - Cake
   - 
   - 
   - 

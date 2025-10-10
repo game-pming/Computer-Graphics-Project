@@ -19,13 +19,13 @@ public class MouseCamera : MonoBehaviour
         float maxPitch = 80f;
 
         // 기본 offset
-        Vector3 baseOffset = new Vector3(0f, 5f, -6f);
+        Vector3 baseOffset = offset;
 
         // pitch 비율 (0 ~ 1)
         float t = Mathf.InverseLerp(minPitch, maxPitch, pitch);
 
         // 보간된 z 값 (예: z가 -6에서 -10까지 늘어나도록)
-        float dynamicZ = Mathf.Lerp(-5f, -15f, t);
+        float dynamicZ = Mathf.Lerp(-2f, 0f, t);
 
         // 최종 offset 적용
         Vector3 dynamicOffset = new Vector3(baseOffset.x, baseOffset.y, dynamicZ);
@@ -33,7 +33,7 @@ public class MouseCamera : MonoBehaviour
         // 마우스 입력
         yaw += Input.GetAxis("Mouse X") * mouseSensitivity;
         pitch -= Input.GetAxis("Mouse Y") * mouseSensitivity;
-        pitch = Mathf.Clamp(pitch, -30, 80); // 상하 회전 제한
+        pitch = Mathf.Clamp(pitch, -10, 40); // 상하 회전 제한
 
         // 회전 적용
         Quaternion rotation = Quaternion.Euler(pitch, yaw, 0);
